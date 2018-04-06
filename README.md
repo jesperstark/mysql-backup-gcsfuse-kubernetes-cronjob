@@ -1,4 +1,4 @@
-# mongodb-backup
+# mysql-backup
 
 This image runs mysqldump to backup data using cronjob to folder `/backup` mounted from a google store bucket using *gcsfuse*.
 
