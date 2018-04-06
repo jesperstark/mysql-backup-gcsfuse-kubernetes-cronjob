@@ -12,7 +12,7 @@ gcloud service-management enable compute.googleapis.com
 
 Create a service account with the [roles/storage.objectAdmin](https://cloud.google.com/storage/docs/access-control/iam-roles) role and generate a credentials key:
 
-        NAME=mongodb-backup
+        NAME=mysql-backup
         gcloud iam service-accounts create $NAME --display-name "$NAME"
         SERVICE_ACCOUNT=$(gcloud iam service-accounts list --filter=name:"$NAME" --format='value(email)')
         GCLOUD_PROJECT=$(gcloud config get-value project)
